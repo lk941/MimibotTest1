@@ -83,42 +83,17 @@ import { TagCloudComponent } from './screens/tag-cloud/tag-cloud.component';
 import{ jqxTagCloudComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxtagcloud';  
 import { jqxColorPickerComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxcolorpicker';
 import { jqxDropDownButtonComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownbutton';
-/*
-import { NavComponent } from './screens/nav/nav.component';
-import { HomeComponent } from './screens/home/home.component';
-import { HomeworkComponent } from './screens/homework/homework.component';
-import { QuizComponent } from './screens/quiz/quiz.component';
-import { BullyReportComponent } from './screens/bully-report/bully-report.component';
-import { BullyDetailsComponent } from './screens/bully-details/bully-details.component';
-import { BullyInsightComponent } from './screens/contatos1/bully-insight/bully-insight.component';
-import { Edit1Component } from './screens/contatos1/edit1/edit1.component';
-import { List1Component } from './screens/contatos1/list1/list1.component';
-import { Edit2Component } from './screens/contatos2/edit2/edit2.component';
-import { List2Component } from './screens/contatos2/list2/list2.component';
-import { Edit3Component } from './screens/contatos3/edit3/edit3.component';
-import { List3Component } from './screens/contatos3/list3/list3.component';
-import { ScoreDetailsComponent } from './screens/pcrassesment/score-details/score-details.component';
-import { ConfirmationDialogComponent } from './screens/confirmation-dialog/confirmation-dialog.component';
-import { ConfirmationDialogService } from './screens/confirmation-dialog/confirmation-dialog.service';
-import { TagCloudComponent } from './screens/tag-cloud/tag-cloud.component';
-import { OverallDashComponent } from './screens/dashboard-tableau/dash-overall.component';
 
-import{ jqxTagCloudComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxtagcloud';  
-import { jqxColorPickerComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxcolorpicker';
-import { jqxDropDownButtonComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownbutton';
-
-import { NgxPaginationModule} from 'ngx-pagination';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { Ng2OrderModule } from 'ng2-order-pipe';
-import { OAuthModule } from 'angular-oauth2-oidc';
-
-import { UniquePipe } from './screens/pcrassesment/unique.pipe';
 import { ParentPortalComponent } from './screens/parent-portal/parent-portal.component';
 import { ParentLoginComponent } from './screens/parent-login/parent-login.component';
 import { ParentportalsignComponent } from './screens/parentportalsign/parentportalsign.component';
 import { ChildReportComponent } from './screens/child-report/child-report.component';
 import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
 import { List4Component } from './screens/contatos4/list4/list4.component';
+
+
+/*
+
 
 import { SelectChildPageComponent } from './screens/select-child-page/select-child-page.component';
 import { PpHomeComponent } from './screens/pp-home/pp-home.component';
@@ -199,33 +174,17 @@ import { List10Component } from './screens/contatos10/list10/list10.component'; 
     jqxTagCloudComponent,
     jqxColorPickerComponent,
     jqxDropDownButtonComponent,
-    /*
-    NavComponent,
-    HomeComponent,
-    HomeworkComponent,
-    QuizComponent,
-    BullyReportComponent,
-    BullyDetailsComponent,
-    BullyInsightComponent,
-    Edit1Component,
-    List1Component,
-    Edit2Component,
-    List2Component,
-    Edit3Component,
-    List3Component,
-    ScoreDetailsComponent,
-    ConfirmationDialogComponent,
-    TagCloudComponent,
-    jqxTagCloudComponent,
-    jqxColorPickerComponent,
-    jqxDropDownButtonComponent,
-    UniquePipe,
     ParentPortalComponent,
     ParentLoginComponent,
     ParentportalsignComponent,
     ChildReportComponent,
     ChildInsightComponent,
     List4Component,
+
+
+    /*
+    
+  
     SelectChildPageComponent,
     PpHomeComponent,
     TeachAddChildComponent,

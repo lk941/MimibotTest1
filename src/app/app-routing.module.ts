@@ -32,15 +32,15 @@ import { BullyDetailsComponent} from './screens/bully-details/bully-details.comp
 import { ScoreDetailsComponent } from './screens/pcrassesment/score-details/score-details.component';
 import { BullyInsightComponent } from './screens/contatos1/bully-insight/bully-insight.component';
 
+import { ParentLoginComponent } from './screens/parent-login/parent-login.component';
+import { ParentportalsignComponent } from './screens/parentportalsign/parentportalsign.component';
+import { ChildReportComponent } from './screens/child-report/child-report.component';
+import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
+
+
 /* imported from mimibot-nov-20 */
 /*
-import { HomeComponent } from './screens/home/home.component';
-import { HomeworkComponent } from './screens/homework/homework.component';
-import { QuizComponent } from './screens/quiz/quiz.component';
-import { BullyReportComponent } from './screens/bully-report/bully-report.component';
-import { BullyDetailsComponent} from './screens/bully-details/bully-details.component';
-import { ScoreDetailsComponent } from './screens/pcrassesment/score-details/score-details.component';
-import { BullyInsightComponent } from './screens/contatos1/bully-insight/bully-insight.component';
+
 import { ParentLoginComponent } from './screens/parent-login/parent-login.component';
 import { ParentportalsignComponent } from './screens/parentportalsign/parentportalsign.component';
 import { ChildReportComponent } from './screens/child-report/child-report.component';
@@ -87,16 +87,15 @@ const routes: Routes = [
   { path: 'bully-insight', component: BullyInsightComponent},
   //Change component: HomeComponent to path: 'phome'
   { path: 'phome', component: HomeComponent},
+  
+  { path: 'parentportalsign', component: ParentportalsignComponent},
+  { path: 'child-report', component: ChildReportComponent },
+  { path: 'child-insight', component: ChildInsightComponent},
+
   // imported from mimibot-nov-20
   //Change '' to ParentLoginComponent
   // { path: '', component: ParentLoginComponent },
   /*
-  { path: 'homework', component: HomeworkComponent },
-  { path: 'quiz', component: QuizComponent },
-  { path: 'bully-report', component: BullyReportComponent},
-  { path: 'bully-details/:id', component: BullyDetailsComponent},
-  { path: 'PCRAReport', component: ScoreDetailsComponent},
-  { path: 'bully-insight', component: BullyInsightComponent},
   //Change component: HomeComponent to path: 'phome'
   { path: 'phome', component: HomeComponent},
   { path: 'parentportalsign', component: ParentportalsignComponent},
