@@ -135,7 +135,7 @@ export class PhqComponent implements OnInit {
   Bar(){
     var mood = this.mood;
     console.log(mood[0]);
-    this.BarChart = new Chart('barChart', {
+    this.BarChart.push(new Chart('barChart', {
         type: 'bar',
         data: {
         labels: this.group(this.mood),
@@ -171,7 +171,7 @@ export class PhqComponent implements OnInit {
             }
          },
         }
-    })
+    }))
 }
 
 }

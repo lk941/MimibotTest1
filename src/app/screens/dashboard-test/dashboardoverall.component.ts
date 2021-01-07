@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ViewEncapsulation } from "@angular/core";
 import { Chart } from 'chart.js';
 import { ContatoService } from '../contatos1/shared/contato1.service';
+import { Observable } from 'rxjs';
 import * as $ from 'jquery';
 declare var $:any;
 // import { ChartjsComponent } from "";
@@ -973,7 +974,7 @@ colorSet(array){
   Bar(){
     var resultName = this.count(this.bullyNames);
     console.log(resultName[0]);
-    this.BarChart = new Chart('barChart', {
+    this.BarChart.push(new Chart('barChart', {
         type: 'bar',
         data: {
         labels: this.group(this.bullyNames),
@@ -1009,7 +1010,7 @@ colorSet(array){
             }
          },
         }
-    })
+    }))
 }
 
 }

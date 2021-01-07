@@ -433,7 +433,7 @@ export class ChildInsightComponent implements OnInit {
     //console.log(this.wordsType)
     var resultCount = this.countWords(this.wordsType);
     console.log(resultCount);
-    this.hBarChart = new Chart('hBarChart',{
+    this.hBarChart.push(new Chart('hBarChart',{
       type: 'horizontalBar',
       data:{
         labels: ['anger','fear','joy','sad'], //this.group(this.wordsType),
@@ -468,7 +468,7 @@ export class ChildInsightComponent implements OnInit {
           }
         }
       }
-    })
+    }))
   }
 
 
@@ -477,7 +477,7 @@ export class ChildInsightComponent implements OnInit {
     chart.destroy();
     var resultCount = this.countWords(this.wordsType);
     console.log(resultCount[0]);
-    this.hBarChart = new Chart('hBarChart',{
+    this.hBarChart.push(new Chart('hBarChart',{
       type: 'horizontalBar',
       data:{
         labels: ['anger','fear','joy','sad'],
@@ -512,7 +512,7 @@ export class ChildInsightComponent implements OnInit {
           }
         }
       }
-    })
+    }))
     //chart.update();
   }
 
@@ -525,7 +525,7 @@ export class ChildInsightComponent implements OnInit {
     }
     var data = this.arrangeToStack(this.SBData);
     console.log(this.SBData);
-    this.stackBarChart = new Chart('stackBarChart',{
+    this.stackBarChart.push(new Chart('stackBarChart',{
       type:'horizontalBar',
       data:{
         labels: names,
@@ -572,7 +572,7 @@ export class ChildInsightComponent implements OnInit {
           position:'top'
         }
       }
-    })
+    }))
   }
 
   //==========================================================================================

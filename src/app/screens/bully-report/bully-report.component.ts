@@ -174,7 +174,7 @@ export class BullyReportComponent implements OnInit {
     Bar(){
         var resultName = this.count(this.bullyNames);
         console.log(resultName[0]);
-        this.BarChart = new Chart('barChart', {
+        this.BarChart.push(new Chart('barChart', {
             type: 'bar',
             data: {
             labels: this.group(this.bullyNames),
@@ -210,7 +210,7 @@ export class BullyReportComponent implements OnInit {
                 }
              },
             }
-        })
+        }))
     }
 
     //Pie Graph for Location
@@ -218,7 +218,7 @@ export class BullyReportComponent implements OnInit {
         var resultLocation = this.count(this.locations)
         console.log(resultLocation[0])
         console.log(this.colorSet(this.locations))
-        this.PieChart = new Chart('pieChart', {
+        this.PieChart.push(new Chart('pieChart', {
             type: 'pie',
             data: {
                 labels: this.group(this.locations),
@@ -241,14 +241,14 @@ export class BullyReportComponent implements OnInit {
                     }
                 }
             }
-        })
+        }))
     }
 
     Doughnut() {
         var resultVictim = this.count(this.victims)
         console.log(resultVictim[0])
         console.log(this.colorSet(this.victims))
-        this.DoughnutChart = new Chart('doughnutChart', {
+        this.DoughnutChart.push(new Chart('doughnutChart', {
             type: 'doughnut',
             data: {
                 labels: this.group(this.victims),
@@ -271,7 +271,7 @@ export class BullyReportComponent implements OnInit {
                     }
                 }
             }
-        })
+        }))
     }
 
     //Button for Bar Graph Bully Chart

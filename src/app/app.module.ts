@@ -91,9 +91,22 @@ import { ChildReportComponent } from './screens/child-report/child-report.compon
 import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
 import { List4Component } from './screens/contatos4/list4/list4.component';
 
+import { HobbiesComponent } from './screens/hobbies/hobbies.component';
+import { Edit5Component } from './screens/contatos5/edit5/edit5.component';
+import { List5Component } from './screens/contatos5/list5/list5.component';
+import { HobbiesInsightComponent } from './screens/contatos5/hobbies-insight/hobbies-insight.component';
+import { PhqReportComponent } from './screens/phq-report/phq-report.component';
+import { PhqInsightComponent } from './screens/contatos6/phq-insight/phq-insight.component';
+import { PhqComponent } from './screens/phq/phq.component';
 
-/*
-
+import { Edit9Component } from './screens/contatos9/edit9/edit9.component';
+import { List9Component } from './screens/contatos9/list9/list9.component';
+import { Edit7Component } from './screens/contatos7/edit7/edit7.component';
+import { List7Component } from './screens/contatos7/list7/list7.component';
+import { Edit8Component } from './screens/contatos8/edit8/edit8.component';
+import { List8Component } from './screens/contatos8/list8/list8.component';
+import { Edit6Component } from './screens/contatos6/edit6/edit6.component';
+import { List6Component } from './screens/contatos6/list6/list6.component';
 
 import { SelectChildPageComponent } from './screens/select-child-page/select-child-page.component';
 import { PpHomeComponent } from './screens/pp-home/pp-home.component';
@@ -103,19 +116,17 @@ import { DialogboxComponent } from './screens/Dialogbox/dialogbox/dialogbox.comp
 import { TeachParConfirmationComponent } from './screens/confirmation/teach-par-confirmation/teach-par-confirmation.component';
 import { TeachnotifComponent } from './screens/teachnotif/teachnotif.component';
 
-import { HobbiesComponent } from './screens/hobbies/hobbies.component';
-import { Edit5Component } from './screens/contatos5/edit5/edit5.component';
-import { List5Component } from './screens/contatos5/list5/list5.component';
-import { HobbiesInsightComponent } from './screens/contatos5/hobbies-insight/hobbies-insight.component';
-import { PhqReportComponent } from './screens/phq-report/phq-report.component';
+import { PointSystemComponent } from './screens/point-system/point-system.component';
+import { PointSystemDetailsComponent } from './screens/point-system-details/point-system-details.component';
+import { PointSystemTaskComponent } from './screens/point-system-task/point-system-task.component';
+import { PointSystemRewardsComponent } from './screens/point-system-rewards/point-system-rewards.component';
+import { Edit10Component } from './screens/contatos10/edit10/edit10.component';
+import { List10Component } from './screens/contatos10/list10/list10.component';
+import { pipe } from "rxjs";
 /*
 
-import { Edit9Component } from './screens/contatos9/edit9/edit9.component';
-import { List9Component } from './screens/contatos9/list9/list9.component';
-import { Edit7Component } from './screens/contatos7/edit7/edit7.component';
-import { List7Component } from './screens/contatos7/list7/list7.component';
-import { Edit8Component } from './screens/contatos8/edit8/edit8.component';
-import { List8Component } from './screens/contatos8/list8/list8.component';
+
+
 import { PointSystemComponent } from './screens/point-system/point-system.component';
 import { PointSystemDetailsComponent } from './screens/point-system-details/point-system-details.component';
 import { PointSystemTaskComponent } from './screens/point-system-task/point-system-task.component';
@@ -151,6 +162,7 @@ import { List10Component } from './screens/contatos10/list10/list10.component'; 
     Page404Component,
     Page500Component,
     // imports from mimibot-nov-20
+    //@pipe/BrowserAnimationsModule,
     EditComponent,
     ListComponent,
     ConfirmationDialogComponent,
@@ -180,40 +192,36 @@ import { List10Component } from './screens/contatos10/list10/list10.component'; 
     ChildReportComponent,
     ChildInsightComponent,
     List4Component,
-
-
-    /*
-    
-  
-    SelectChildPageComponent,
-    PpHomeComponent,
-    TeachAddChildComponent,
-    DialogboxComponent,
-    TeachParConfirmationComponent,
-    TeachnotifComponent,
     HobbiesComponent,
     Edit5Component,
     List5Component,
     HobbiesInsightComponent,
     PhqReportComponent,
-    /*
-    PhqReportComponent,
+    PhqInsightComponent,
+    PhqComponent,
+    
     Edit9Component,
     List9Component,
     Edit7Component,
     List7Component,
     Edit8Component,
     List8Component,
+    Edit6Component,
+    List6Component,
+
+    SelectChildPageComponent,
+    PpHomeComponent,
+    TeachAddChildComponent,
+    DialogboxComponent,
+    TeachParConfirmationComponent,
+    TeachnotifComponent,
+
     PointSystemComponent,
     PointSystemDetailsComponent,
     PointSystemTaskComponent,
     PointSystemRewardsComponent,
-    PhqComponent,
-    PhqInsightComponent,
-    Edit6Component,
-    List6Component,
     Edit10Component,
-    List10Component, */
+    List10Component,
     OverallDashComponent
   ],
   entryComponents: [],

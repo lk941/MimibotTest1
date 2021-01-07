@@ -224,7 +224,7 @@ import {formatDate } from '@angular/common';
         var resultMood = this.count(this.mood)
         console.log(resultMood[0])
         console.log(this.colorSet(this.mood))
-        this.PieChart = new Chart('pieChart', {
+        this.PieChart.push(new Chart('pieChart', {
             type: 'pie',
             data: {
                 labels: this.group(this.mood),
@@ -247,7 +247,7 @@ import {formatDate } from '@angular/common';
                     }
                 }
             }
-        })
+        }))
     }  
 
     //Causes of Mood Chart
@@ -255,7 +255,7 @@ import {formatDate } from '@angular/common';
     hBar(){
         var resultType = this.count(this.moodType);
         console.log(resultType[0]);
-        this.hBarChart = new Chart('hBarChart', {
+        this.hBarChart.push(new Chart('hBarChart', {
             type: 'horizontalBar',
             data: {
                 labels: this.group(this.moodType),
@@ -290,7 +290,7 @@ import {formatDate } from '@angular/common';
                    }
                 },
             }
-        })
+        }))
     }
 
     getTotal(){

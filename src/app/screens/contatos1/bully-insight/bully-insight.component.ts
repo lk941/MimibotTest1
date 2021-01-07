@@ -195,7 +195,7 @@ import {formatDate } from '@angular/common';
     hBar(){
         var resultType = this.count(this.bullyTypes);
         console.log(resultType[0]);
-        this.hBarChart = new Chart('hBarChart', {
+        this.hBarChart.push(new Chart('hBarChart', {
             type: 'horizontalBar',
             data: {
                 labels: this.group(this.bullyTypes),
@@ -230,7 +230,7 @@ import {formatDate } from '@angular/common';
                    }
                 },
             }
-        })
+        }))
     }
 
     getTotal(){

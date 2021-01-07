@@ -37,6 +37,15 @@ import { ParentportalsignComponent } from './screens/parentportalsign/parentport
 import { ChildReportComponent } from './screens/child-report/child-report.component';
 import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
 
+import { HobbiesComponent } from './screens/hobbies/hobbies.component';
+import { HobbiesInsightComponent } from './screens/contatos5/hobbies-insight/hobbies-insight.component';
+import { PhqReportComponent } from './screens/phq-report/phq-report.component';
+import { PhqComponent } from './screens/phq/phq.component';
+import { PpHomeComponent } from './screens/pp-home/pp-home.component';
+import { TeachnotifComponent } from './screens/teachnotif/teachnotif.component';
+/*
+import { PhqInsightComponent } from './screens/contatos6/phq-insight/phq-insight.component';
+
 
 /* imported from mimibot-nov-20 */
 /*
@@ -91,6 +100,24 @@ const routes: Routes = [
   { path: 'parentportalsign', component: ParentportalsignComponent},
   { path: 'child-report', component: ChildReportComponent },
   { path: 'child-insight', component: ChildInsightComponent},
+
+  { path: 'hobbies', component: HobbiesComponent},
+  { path: 'hobby-insight', component: HobbiesInsightComponent},
+  { path: 'phq-report', component: PhqReportComponent},
+  { path: 'phq', component: PhqComponent},
+
+  { path: 'child-insight', component: ChildInsightComponent},
+  { path: 'phome', component: PpHomeComponent, canActivate: [AuthenticationGuard] },
+  { path: 'notifs', component: TeachnotifComponent, canActivate: [AuthenticationGuard] },
+
+  /*
+  { path: 'phq-insight', component: PhqInsightComponent},
+  { path: 'point-system', component: PointSystemComponent},
+  { path: 'point-system-task', component: PointSystemTaskComponent},
+  { path: 'point-system-rewards', component: PointSystemRewardsComponent},
+  { path: 'point-system-details/:id', component: PointSystemDetailsComponent},
+  /*
+  { path: 'phq-insight', component: PhqInsightComponent},
 
   // imported from mimibot-nov-20
   //Change '' to ParentLoginComponent

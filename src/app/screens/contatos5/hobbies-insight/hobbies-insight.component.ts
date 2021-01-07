@@ -14,7 +14,9 @@ import * as Sentiment from 'sentiment';
 @Component({
   selector: 'app-hobbies-insight',
   templateUrl: './hobbies-insight.component.html',
-  styleUrls: ['./hobbies-insight.component.scss']
+  styleUrls: ['./hobbies-insight.component.scss'], 
+
+  
 })
 export class HobbiesInsightComponent implements OnInit {
   constructor(private hobbiesinsightservice: HobbiesinsightService , 
@@ -23,7 +25,6 @@ export class HobbiesInsightComponent implements OnInit {
     private automlService: AutomlService,
     private oauthService: OAuthService,
 ) { }
-
 
   hobbyType = [];
   wordsArray = [];
@@ -335,7 +336,7 @@ export class HobbiesInsightComponent implements OnInit {
     console.log(this.enjoymentTypes);
     var resultCount = this.countWords(this.enjoymentTypes);
     console.log(resultCount);
-    this.hBarChart = new Chart('hBarChart',{
+    this.hBarChart.push(new Chart('hBarChart',{
       type: 'bar',
       data:{
         labels: ['Enjoy','Average','Dislike'], //this.group(this.hobbyType),
@@ -358,7 +359,7 @@ export class HobbiesInsightComponent implements OnInit {
              fontSize: 15,
              beginAtZero: true,
              // stacked: true,
-             callback: function(value) {if (value % 1 === 0) {return value;}}
+             callback: function(value: number) {if (value % 1 === 0) {return value;}}
            }
           }],
           xAxes: [{
@@ -373,7 +374,7 @@ export class HobbiesInsightComponent implements OnInit {
           }
         }
       }
-    })
+    }))
   }
 
   stackedBar(){
@@ -384,7 +385,7 @@ export class HobbiesInsightComponent implements OnInit {
     }
     var data = this.arrangeToStack(this.SBData);
     console.log(this.SBData);
-    this.stackBarChart = new Chart('stackBarChart',{
+    this.stackBarChart.push(new Chart('stackBarChart',{
       type:'horizontalBar',
       data:{
         labels: names,
@@ -423,7 +424,7 @@ export class HobbiesInsightComponent implements OnInit {
             ticks: {
                 beginAtZero:true,
                 stepSize: 1,
-                callback: function(value) {if (value % 1 === 0) {return value;}}
+                callback: function(value: any) {if (value % 1 === 0) {return value;}}
             }
           }]
         },
@@ -434,7 +435,7 @@ export class HobbiesInsightComponent implements OnInit {
           position:'top'
         }
       }
-    })
+    }))
   }
 
   //==========================================================================================

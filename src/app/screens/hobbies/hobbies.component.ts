@@ -117,7 +117,7 @@ export class HobbiesComponent implements OnInit {
         var resultHobby = this.count(this.Hobby)
         console.log(resultHobby[0])
         console.log(this.colorSet(this.Hobby))
-        this.PieChart = new Chart('pieChart', {
+        this.PieChart.push(new Chart('pieChart', {
             type: 'pie',
             data: {
                 labels: this.group(this.Hobby),
@@ -140,14 +140,14 @@ export class HobbiesComponent implements OnInit {
                     }
                 }
             }
-        })
+        }))
     }    
 
     //Bar Graph for Individual Hobby
     Bar(){
         var resultName = this.count(this.Name);
         console.log(resultName[0]);
-        this.BarChart = new Chart('barChart', {
+        this.BarChart.push(new Chart('barChart', {
             type: 'bar',
             data: {
             labels: this.group(this.Name),
@@ -183,6 +183,6 @@ export class HobbiesComponent implements OnInit {
                 }
              },
             }
-        })
+        }))
     }
 }
