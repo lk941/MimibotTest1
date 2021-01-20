@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewChecked} from '@angular/core';
 import { NavService } from '../nav/nav.service';
-import { Contato } from '../contatos/shared/contato';
-import { ContatoService } from '../contatos/shared/contato.service';
-import { ContatoDataService } from '../contatos/shared/contato-data.service';
+import { Contato } from 'src/app/contatos/shared/contato';
+import { ContatoService } from 'src/app/contatos/shared/contato.service';
+import { ContatoDataService } from 'src/app/contatos/shared/contato-data.service';
 import {ChildkeyService} from './childkey.service';
 import { Childkeyparent } from './childkeyparent';
 import { MatDialog } from '@angular/material';

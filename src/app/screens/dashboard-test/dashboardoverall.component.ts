@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ViewEncapsulation } from "@angular/core";
 import { Chart } from 'chart.js';
-import { ContatoService } from '../contatos1/shared/contato1.service';
+import { ContatoService } from 'src/app/contatos1/shared/contato1.service';
 import { Observable } from 'rxjs';
 import * as $ from 'jquery';
 declare var $:any;
@@ -18,6 +18,8 @@ export class DashboardOverallComponent implements OnInit {
     event.preventDefault();
     document.querySelector('body').classList.toggle('removeProbanner');
   }
+
+  
   constructor(private contatoService: ContatoService) { }
     bullyListArray = [];
     bullyNames = [];
@@ -27,6 +29,13 @@ export class DashboardOverallComponent implements OnInit {
     victims = [];
     DoughnutChart = [];
     reasons = [];
+
+    curr = new Date; // get current date
+    first = this.curr.getDate() - this.curr.getDay(); // First day is the day of the month - the day of the week
+    last = this.first + 6; // last day is the first day + 6
+
+    firstday = new Date(this.curr.setDate(this.first)).toUTCString();
+    lastday = new Date(this.curr.setDate(this.last)).toUTCString();
 
   ngOnInit() {
 
@@ -45,6 +54,7 @@ export class DashboardOverallComponent implements OnInit {
           this.bullyNames.push(this.bullyListArray[i]['BullyName']);
       }
       console.log(this.bullyNames)
+      //this.bullyNames.sort()
 
       //Get only the Location from firebase
       for (var i = 0; i < this.bullyListArray.length; ++i){
@@ -970,17 +980,24 @@ colorSet(array){
       ]
     }
   ];
-
+  
   Bar(){
+    function compareNumbers(a, b) {
+      return a - b;
+    }
     var resultName = this.count(this.bullyNames);
+    //resultName.sort(function(a, b) {
+      //return resultName.a - resultName[b];
+    //});
+
     console.log(resultName[0]);
     this.BarChart.push(new Chart('barChart', {
-        type: 'bar',
+        type: 'horizontalBar',
         data: {
         labels: this.group(this.bullyNames),
          datasets: [{
              label: '# of times reported for bullying',
-             data: resultName[0],
+             data: resultName[0].sort(),
              backgroundColor: 
                  'rgb(214, 234, 248)',
              borderColor: 
@@ -988,6 +1005,21 @@ colorSet(array){
              borderWidth: 0.3
          }]
         },options: {
+          /* plugins:{
+            enable: true,
+            mode: 'function',
+            reference: [6, 5, 4],
+            sortBy: 'data',
+            order: 'desc',
+            sort:{
+              enable: true,
+              sortFunction: (a, b) => {
+                if (resultName[a] < resultName[b]) return -1
+                if (resultName[a] > resultName[b]) return 1
+                return 0
+            }
+         },*/
+          
          title:{
              text:"Bully Chart",
              display:true,
@@ -1001,6 +1033,7 @@ colorSet(array){
              }],
              xAxes: [{
                 ticks: {
+                    beginAtZero:true,
                     fontSize: 15
                 }
             }]
@@ -1010,7 +1043,8 @@ colorSet(array){
             }
          },
         }
-    }))
-}
-
+      }
+    ))
+  }
+    
 }

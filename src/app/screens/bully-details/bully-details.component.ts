@@ -1,8 +1,8 @@
-import { Contato1 } from '../contatos1/shared/contato1';
+import { Contato1 } from 'src/app/contatos1/shared/contato1';
 import { Component, OnInit } from '@angular/core';
-import { ContatoService } from '../contatos1/shared/contato1.service';
+import { ContatoService } from 'src/app/contatos1/shared/contato1.service';
 import { Observable } from 'rxjs';
-import { ContatoDataService } from '../contatos1/shared/contato1-data.service';
+import { ContatoDataService } from 'src/app/contatos1/shared/contato1-data.service';
 import { Router, Params } from '@angular/router';
 import {ActivatedRoute} from '@angular/router';
 import {NavService} from '../nav/nav.service'

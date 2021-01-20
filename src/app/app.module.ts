@@ -42,9 +42,9 @@ import { DashboardOverallComponent } from "./screens/dashboard-test/dashboardove
 // imports from mimibot-nov-2020
 
 import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
-import { ContatoDataService } from './screens/contatos/shared/contato-data.service';
-import { ContatoService } from './screens/contatos/shared/contato.service';
-import { AutomlService } from './screens/contatos1/bully-insight/automl.service';
+import { ContatoDataService } from './contatos/shared/contato-data.service';
+import { ContatoService } from './contatos/shared/contato.service';
+import { AutomlService } from './contatos1/bully-insight/automl.service';
 import { AuthService } from './screens/auth.service';
 import { ExcelService } from './screens/child-model/excel-service/excel.service';
 
@@ -52,8 +52,8 @@ import {environment} from '../environments/environment';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import { MatTableModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatPaginatorModule, MatDialog, MatDialogModule, MatSortModule, MatBadgeModule, MatIconModule, MatButtonModule } from '@angular/material';
-import { EditComponent } from './screens/contatos/edit/edit.component';
-import { ListComponent } from './screens/contatos/list/list.component';
+import { EditComponent } from './contatos/edit/edit.component';
+import { ListComponent } from './contatos/list/list.component';
 
 import { ConfirmationDialogComponent } from './screens/confirmation-dialog/confirmation-dialog.component';
 import { ConfirmationDialogService } from './screens/confirmation-dialog/confirmation-dialog.service';
@@ -64,19 +64,19 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { UniquePipe } from './screens/pcrassesment/unique.pipe';
 // import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { NavComponent } from './screens/nav/nav.component';
+// import { NavComponent } from './screens/nav/nav.component';
 import { HomeComponent } from './screens/home/home.component';
 import { HomeworkComponent } from './screens/homework/homework.component';
 import { QuizComponent } from './screens/quiz/quiz.component';
 import { BullyReportComponent } from './screens/bully-report/bully-report.component';
 import { BullyDetailsComponent } from './screens/bully-details/bully-details.component';
-import { BullyInsightComponent } from './screens/contatos1/bully-insight/bully-insight.component';
-import { Edit1Component } from './screens/contatos1/edit1/edit1.component';
-import { List1Component } from './screens/contatos1/list1/list1.component';
-import { Edit2Component } from './screens/contatos2/edit2/edit2.component';
-import { List2Component } from './screens/contatos2/list2/list2.component';
-import { Edit3Component } from './screens/contatos3/edit3/edit3.component';
-import { List3Component } from './screens/contatos3/list3/list3.component';
+import { BullyInsightComponent } from './contatos1/bully-insight/bully-insight.component';
+import { Edit1Component } from './contatos1/edit1/edit1.component';
+import { List1Component } from './contatos1/list1/list1.component';
+import { Edit2Component } from './contatos2/edit2/edit2.component';
+import { List2Component } from './contatos2/list2/list2.component';
+import { Edit3Component } from './contatos3/edit3/edit3.component';
+import { List3Component } from './contatos3/list3/list3.component';
 import { ScoreDetailsComponent } from './screens/pcrassesment/score-details/score-details.component';
 import { TagCloudComponent } from './screens/tag-cloud/tag-cloud.component';
 
@@ -89,24 +89,24 @@ import { ParentLoginComponent } from './screens/parent-login/parent-login.compon
 import { ParentportalsignComponent } from './screens/parentportalsign/parentportalsign.component';
 import { ChildReportComponent } from './screens/child-report/child-report.component';
 import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
-import { List4Component } from './screens/contatos4/list4/list4.component';
+import { List4Component } from './contatos4/list4/list4.component';
 
 import { HobbiesComponent } from './screens/hobbies/hobbies.component';
-import { Edit5Component } from './screens/contatos5/edit5/edit5.component';
-import { List5Component } from './screens/contatos5/list5/list5.component';
-import { HobbiesInsightComponent } from './screens/contatos5/hobbies-insight/hobbies-insight.component';
+import { Edit5Component } from './contatos5/edit5/edit5.component';
+import { List5Component } from './contatos5/list5/list5.component';
+import { HobbiesInsightComponent } from './contatos5/hobbies-insight/hobbies-insight.component';
 import { PhqReportComponent } from './screens/phq-report/phq-report.component';
-import { PhqInsightComponent } from './screens/contatos6/phq-insight/phq-insight.component';
+import { PhqInsightComponent } from './contatos6/phq-insight/phq-insight.component';
 import { PhqComponent } from './screens/phq/phq.component';
 
-import { Edit9Component } from './screens/contatos9/edit9/edit9.component';
-import { List9Component } from './screens/contatos9/list9/list9.component';
-import { Edit7Component } from './screens/contatos7/edit7/edit7.component';
-import { List7Component } from './screens/contatos7/list7/list7.component';
-import { Edit8Component } from './screens/contatos8/edit8/edit8.component';
-import { List8Component } from './screens/contatos8/list8/list8.component';
-import { Edit6Component } from './screens/contatos6/edit6/edit6.component';
-import { List6Component } from './screens/contatos6/list6/list6.component';
+import { Edit9Component } from './contatos9/edit9/edit9.component';
+import { List9Component } from './contatos9/list9/list9.component';
+import { Edit7Component } from './contatos7/edit7/edit7.component';
+import { List7Component } from './contatos7/list7/list7.component';
+import { Edit8Component } from './contatos8/edit8/edit8.component';
+import { List8Component } from './contatos8/list8/list8.component';
+import { Edit6Component } from './contatos6/edit6/edit6.component';
+import { List6Component } from './contatos6/list6/list6.component';
 
 import { SelectChildPageComponent } from './screens/select-child-page/select-child-page.component';
 import { PpHomeComponent } from './screens/pp-home/pp-home.component';
@@ -120,9 +120,13 @@ import { PointSystemComponent } from './screens/point-system/point-system.compon
 import { PointSystemDetailsComponent } from './screens/point-system-details/point-system-details.component';
 import { PointSystemTaskComponent } from './screens/point-system-task/point-system-task.component';
 import { PointSystemRewardsComponent } from './screens/point-system-rewards/point-system-rewards.component';
-import { Edit10Component } from './screens/contatos10/edit10/edit10.component';
-import { List10Component } from './screens/contatos10/list10/list10.component';
+import { Edit10Component } from './contatos10/edit10/edit10.component';
+import { List10Component } from './contatos10/list10/list10.component';
 import { pipe } from "rxjs";
+
+// pipes
+
+import { FilterPipe } from './pipes/filter.pipe';
 /*
 
 
@@ -143,6 +147,7 @@ import { List10Component } from './screens/contatos10/list10/list10.component'; 
 @NgModule({
   declarations: [
     AppComponent,
+    FilterPipe,
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
@@ -167,7 +172,7 @@ import { List10Component } from './screens/contatos10/list10/list10.component'; 
     ListComponent,
     ConfirmationDialogComponent,
     UniquePipe,
-    NavComponent,
+    // NavComponent,
     HomeComponent,
     HomeworkComponent,
     QuizComponent,

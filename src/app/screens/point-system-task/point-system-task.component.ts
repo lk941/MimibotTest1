@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { map } from 'rxjs/operators';
 import { Routes, RouterModule } from '@angular/router';
-import { ContatoService } from '../contatos8/shared/contato8.service';
+import { ContatoService } from 'src/app/contatos8/shared/contato8.service';
 import { NavService } from '../nav/nav.service';
 import * as $ from 'jquery';
 declare var $:any

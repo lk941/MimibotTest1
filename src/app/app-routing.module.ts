@@ -30,7 +30,7 @@ import { QuizComponent } from './screens/quiz/quiz.component';
 import { BullyReportComponent } from './screens/bully-report/bully-report.component';
 import { BullyDetailsComponent} from './screens/bully-details/bully-details.component';
 import { ScoreDetailsComponent } from './screens/pcrassesment/score-details/score-details.component';
-import { BullyInsightComponent } from './screens/contatos1/bully-insight/bully-insight.component';
+import { BullyInsightComponent } from './contatos1/bully-insight/bully-insight.component';
 
 import { ParentLoginComponent } from './screens/parent-login/parent-login.component';
 import { ParentportalsignComponent } from './screens/parentportalsign/parentportalsign.component';
@@ -38,7 +38,7 @@ import { ChildReportComponent } from './screens/child-report/child-report.compon
 import { ChildInsightComponent } from './screens/child-insight/child-insight.component';
 
 import { HobbiesComponent } from './screens/hobbies/hobbies.component';
-import { HobbiesInsightComponent } from './screens/contatos5/hobbies-insight/hobbies-insight.component';
+import { HobbiesInsightComponent } from './contatos5/hobbies-insight/hobbies-insight.component';
 import { PhqReportComponent } from './screens/phq-report/phq-report.component';
 import { PhqComponent } from './screens/phq/phq.component';
 import { PpHomeComponent } from './screens/pp-home/pp-home.component';

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavService } from '../nav/nav.service';
 import { Observable, of } from 'rxjs';
 import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
-import { ContatoService } from '../contatos1/shared/contato1.service';
+import { ContatoService } from 'src/app/contatos1/shared/contato1.service';
 import * as $ from 'jquery';
 declare function btnTopiciseClicked([]): any;
 declare var $:any;

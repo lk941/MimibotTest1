@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Contato4Service } from '../contatos4/shared/contato4.service';
+import { Contato4Service } from 'src/app/contatos4/shared/contato4.service';
 import * as brain from 'brain.js/browser';
 import * as firebase from 'firebase/app';
-import {AutomlService } from '../contatos1/bully-insight/automl.service';
+import {AutomlService } from 'src/app/contatos1/bully-insight/automl.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {NavService} from '../nav/nav.service';
 import { OAuthService, JwksValidationHandler, AuthConfig } from 'angular-oauth2-oidc';
@@ -23,6 +23,7 @@ export class ChildInsightComponent implements OnInit {
       private oauthService: OAuthService,
       private nav :NavService
     ) { }
+
 
   wordsType = [];
   wordsArray = [];
@@ -50,7 +51,8 @@ export class ChildInsightComponent implements OnInit {
   stackBarChart = [];
   SBData = [];
 
-
+  search;
+  searchDDL = [];
   userType;
 
   isTeacher = true;
@@ -62,11 +64,12 @@ export class ChildInsightComponent implements OnInit {
   wordCounts = [];
   wordDetailList = [];
   wordTitle = [];
+  wordList;
 
   //variables for the table
   key: string = "";
   reverse: boolean = true;
-  P: number = 1;
+  p: number = 1;
 
   //for the categorizing of the sentences
   maxlength = 21;

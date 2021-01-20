@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contato4Service } from '../contatos4/shared/contato4.service';
+import { Contato4Service } from 'src/app/contatos4/shared/contato4.service';
 declare function btnTopiciseClicked([]): any;
 
 @Component({

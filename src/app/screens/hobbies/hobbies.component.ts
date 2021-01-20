@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Chart } from 'chart.js';
-import { ContatoService } from '../contatos5/shared/contato5.service';
+import { ContatoService } from 'src/app/contatos5/shared/contato5.service';
 import { NavService } from '../nav/nav.service';
 import * as $ from 'jquery';
 declare var $:any;

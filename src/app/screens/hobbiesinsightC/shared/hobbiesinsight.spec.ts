@@ -1,4 +1,4 @@
-import { Hobbiesinsight } from './hobbiesinsightC';
+import { Hobbiesinsight } from './hobbiesinsight';
 
 describe('Hobbiesinsight', () => {
   it('should create an instance', () => {

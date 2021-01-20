@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavService } from '../nav/nav.service'
-import { ContatoService } from '../contatos1/shared/contato1.service';
+import { ContatoService } from 'src/app/contatos1/shared/contato1.service';
 
 
 @Component({
@@ -12,6 +12,7 @@ export class ParentPortalComponent implements OnInit {
   // parentPortal: parentPortal
   key: string = "";
   success = false;
+  onSubmit;
 
   constructor(private nav: NavService, private contatoService:ContatoService) { }
 
