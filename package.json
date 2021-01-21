@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node --max_old_space_size=16384 node_modules/@angular/cli/bin/ng serve --vendor-chunk",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "fix-memory-limit": "cross-env LIMIT=16384 increase-memory-limit",
     "build-locale:en": "ng build -c en --output-path=dist/en --baseHref /en/",
-    "ng-high-memory": "node --max_old_space_size=16384 node_modules/@angular/cli/bin/ng serve --vendor-chunk"
+    "ng-high-memory": "ng serve"
   },
   "private": true,
   "dependencies": {
