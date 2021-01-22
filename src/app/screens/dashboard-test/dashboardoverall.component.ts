@@ -997,7 +997,7 @@ colorSet(array){
         labels: this.group(this.bullyNames),
          datasets: [{
              label: '# of times reported for bullying',
-             data: resultName[0].sort(),
+             data: resultName[0].sort(function(a, b){return b-a}),
              backgroundColor: 
                  'rgb(214, 234, 248)',
              borderColor: 
