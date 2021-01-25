@@ -1,5 +1,7 @@
 {
     "staticWebApps.appSubpath": "/",
     "staticWebApps.apiSubpath": "api",
-    "staticWebApps.outputSubpath": "dist"
+    "staticWebApps.outputSubpath": "dist",
+    "appService.defaultWebAppToDeploy": "/subscriptions/8c45d4ad-5434-4100-8097-96b0b801e36a/resourceGroups/mimibot-resource/providers/Microsoft.Web/sites/Mimibot",
+    "appService.deploySubpath": "."
 }
